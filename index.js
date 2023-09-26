@@ -7,8 +7,8 @@
  */
 function convertToCelsius(fahren) {
   fahren = parseFloat(fahren);
-  let celc = ((fahren - 32) * 5) / 9;
-  return celc;
+  let temperatureToCelcius = ((fahren - 32) * 5) / 9;
+  return temperatureToCelcius;
 }
 
 /**
@@ -36,9 +36,7 @@ function createMessage(fahren, celc) {
     message = "warm";
   } else message = "hot";
 
-  console.log(
-    `${fahren}° Fahrenheit converts to ${celc}° Celcius and feels ${message}`
-  );
+  return `${fahren}° Fahrenheit converts to ${celc}° Celcius and feels ${message}`;
 }
 
 /**
